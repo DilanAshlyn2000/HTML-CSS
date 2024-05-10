@@ -5,37 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+.header{
+    display:inline-block;
+    width: 100%;
+}
+.menu{
+display: inline-block;
+padding: 0px 40px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 19px;
+text-decoration: none;
+}
+
+
+li a:hover {
+background-color: #935116;
+}
+</style>
 <body>
     <h1><body backgroundcolor="white "><font color="#7B241C"><center><u>BREW-TIFUL MORNINGS</u></center></h1></body></font color>
+        <div class="header">
+            <nav>
+                <ul>
+        
+                   <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                    <li class="menu"><a href="menu.html">MENU</a></li>
+                    <li class="menu"><a href="registration.html">REGISTRATION FORM</a></li>
+                    <li class="menu"><a href="gallery.html">GALLERY</a></li>
+                    <li class="menu"><a href="contactus.html">CONTACT</a></li>
+                    <li class="menu"><a href="https://maps.app.goo.gl/bnNm3PhDDAgMB3Xo9">MAP</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
         <img src="C:\Users\dila3576\Downloads\photo-1497935586351-b67a49e012bf.avif" alt="HTML5 Icon" width="1200" height="300">
         <h2><center><font color="ORANGE">REGISTRATION</font></center></h2>
                 
-        <form action="order.html" method="get">
-               <label for="name">Name:</label><br>
-               <input type="text" id="name" name="name" placeholder="Enter Name" required autofocus><br>
-        
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" placeholder="Enter Username" required autofocus><br>
+        <form action="order.html" method="get" style="margin: 0 auto; width: 28%;">
+            <fieldset>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required autofocus><br>
+         
+                 <label for="username">Username:</label><br>
+                 <input type="text" id="username" name="username" placeholder="Enter Username" required autofocus><br>
+                 <label for="phonenumber">Phone Number:</label><br>
+                 <input type="tel" id="phonenumber" name="phonenumber" placeholder="Enter phonenumber" pattern="[0-9]{10}"required autofocus><br>
+                
+                 <label for="email">Email:</label><br>
+                 <input type="email" id="email" name="email" placeholder="Enter Email id" required autofocus><br>
             
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" placeholder="Enter Email id" required autofocus><br>
-            
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
-                 
-                <label for="DOB">DOB:</label><br>
-                <input type="date" id="username" name="username" placeholder="Enter Username" required autofocus><br>
-            
-                <label for="gender">Gender:</label><br>
-                <label for="male">Male</label>
-                <input type="radio" id="male" name="gender" ><br>
-                <label for="male">Female</label>
-                <input type="radio" id="female" name="gender" ></br>
-                <br>
-                <label for="address">Address:</label><br>
-                <input type=textarea name="address">
-            <br/><br/>
-            <input type="submit" value="Submit">
+                 <label for="DOB">DOB:</label><br>
+                 <input type="date" id="username" name="username" placeholder="Enter Username" required autofocus><br>
+             
+                 <label for="gender">Gender:</label><br>
+                 <label for="male">Male</label>
+                 <input type="radio" id="male" name="gender" ><br>
+                 <label for="male">Female</label>
+                 <input type="radio" id="female" name="gender" ></br>
+                 <label for="address">Address:</label><br>
+                 <input type=textarea name="address"><br/>
+                 <label for="password">Password:</label><br>
+                 <input type="password" id="password" name="password" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+                  
+                
+             <center><input type="submit" value="Submit"></center>
+            </fieldset>
         </form>
     
 </body>
