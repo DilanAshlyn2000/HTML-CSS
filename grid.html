@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      body{
+            background-image: url("49.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+        display:inline-block;
+        width: 100%;
+    }
+    .menu{
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 19px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #873600 ;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    margin: 27px 0;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    gap: 5px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin: 207px 303px;
+    color:#EEC5AA;
+}
+
+.grid-container > div {
+  background-color: #69300A;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.head{
+    background-color:rgba(0, 0, 0, 0.5);
+    color:white;
+
+}
+h2{
+    width: 100%;
+            animation-name: text;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+}
+#one {
+            animation-direction: alternate-reverse;
+        }
+ 
+        @keyframes text {
+            from {
+                margin-left: 60%;
+            }
+ 
+            to {
+                margin-left: 0%;
+            }
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li class="menu"><a href="home.html">HOME</a></li>
+                <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                 <li class="menu"><a href="menu.html">MENU</a></li>
+                 <li class="menu"><a href="receipe.html">RECIPES</a></li>
+                 <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                 <li class="menu"><a href="contact.html">CONTACT</a></li>
+                 <li class="menu"><a href="map.html">MAP</a></li>
+                 <li class="menu"><a href="registration.html">SIGN UP</a></li>
+ 
+            </ul>
+        </nav>
+        </div>
+        <div class="head">
+            <center><h2 id="one">THANK  YOU  FOR  REGISTERING!</h2></center>
+        </div>
+<div class="grid-container">
+  <div class="item1">Skillfully Roasted. Artfully Blended.</div>
+  <div class="item2">Rise and Sip</div>
+  <div class="item3">We Do Coffee Right</div>  
+  <div class="item4">Sip Happens</div>
+  <div class="item5">Love at First Sip</div>
+</div>
+</body>
+</html>
+
+

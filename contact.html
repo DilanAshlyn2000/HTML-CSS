@@ -1,25 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body{
-            background-image: url("1000_F_276353920_LYBJg7bylEGmGJJhfFP7waS1kI1jbC4m.jpg");
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+            background-image: url("52.webp");
             background-repeat: no-repeat;
             background-size: cover;
         }
-    </style>
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    margin: 146px 15px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: brown;
+  color: white;
+  transform: rotateY(180deg);
+}
+.header{
+    display:inline-block;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.menu{
+display: inline-block;
+padding: 0px 20px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: black;
+
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 19px;
+text-decoration: none;
+}
+
+
+li a:hover {
+background-color: #935116;
+}
+</style>
 </head>
 <body>
-    <section id="contact">
-        <h2><font color="#7B241C" ><center>CONTACT US</center></font color></h2>
-        <pre>HAVE QUESTIONS OR FEEDBACK?REACH OUT TO US:</pre>
-        <pre>Email: info@brewtiful.com</pre>
-        <pre>Phone: 98785-12341       </pre>
-    </section>
-    <footer>
-        <center><a href="index.html">EXIT</a></center>
-        </footer>
+
+    <div class="header">
+        <nav>
+            <ul>
+              <li class="menu"><a href="home.html">HOME</a></li>
+               <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                <li class="menu"><a href="menu.html">MENU</a></li>
+                <li class="menu"><a href="receipe.html">RECIPES</a></li>
+                <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                <li class="menu"><a href="contact.html">CONTACT</a></li>
+                <li class="menu"><a href="map.html">MAP</a></li>
+                <li class="menu"><a href="registration.html">SIGN UP</a></li>
+
+            </ul>
+        </nav>
+        </div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="h.jpg" alt="Avatar" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1> HAVE QUESTIONS OR FEEDBACK?    </h1> 
+      <p>REACH OUT TO US:      </p> 
+      <p>Email: info@brewtiful.com    </p>
+      <p>Phone: 98785-12341  </p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

@@ -8,18 +8,20 @@
 <style>
 .header{
     display:inline-block;
+    position: fixed;
     width: 100%;
 }
 .menu{
 display: inline-block;
-padding: 0px 40px;
+padding: 0px 20px;
 }
 ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: #333;
+background-color: black;
+
 }
 
 li {
@@ -38,27 +40,51 @@ text-decoration: none;
 li a:hover {
 background-color: #935116;
 }
+#myVideo { 
+ position: fixed; 
+ width: 100%;
+ height: auto;
+  right: 0;
+  bottom: 0;
+}
+.form1{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    right:0%;
+    color: white;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+}
 </style>
 <body>
-    <h1><body backgroundcolor="white "><font color="#7B241C"><center><u>BREW-TIFUL MORNINGS</u></center></h1></body></font color>
+    
+        <!-- <img src="C:\Users\dila3576\Downloads\photo-1497935586351-b67a49e012bf.avif" alt="HTML5 Icon" width="1200" height="300">
+        <h2><center><font color="ORANGE">REGISTRATION</font></center></h2>
+                 -->
+                 <video autoplay muted loop id="myVideo"> 
+                    <source src="46989-449623829.mp4" type="video/mp4">
+                   </video>
+                   
         <div class="header">
             <nav>
                 <ul>
         
-                   <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
-                    <li class="menu"><a href="menu.html">MENU</a></li>
-                    <li class="menu"><a href="registration.html">REGISTRATION FORM</a></li>
-                    <li class="menu"><a href="gallery.html">GALLERY</a></li>
-                    <li class="menu"><a href="contactus.html">CONTACT</a></li>
-                    <li class="menu"><a href="https://maps.app.goo.gl/bnNm3PhDDAgMB3Xo9">MAP</a></li>
-                   
+                    <li class="menu"><a href="home.html">HOME</a></li>
+                    <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                     <li class="menu"><a href="menu.html">MENU</a></li>
+                     <li class="menu"><a href="receipe.html">RECIPES</a></li>
+                     <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                     <li class="menu"><a href="contact.html">CONTACT</a></li>
+                     <li class="menu"><a href="map.html">MAP</a></li>
+                     <li class="menu"><a href="registration.html">SIGN UP</a></li>
+     
                 </ul>
             </nav>
         </div>
-        <img src="C:\Users\dila3576\Downloads\photo-1497935586351-b67a49e012bf.avif" alt="HTML5 Icon" width="1200" height="300">
-        <h2><center><font color="ORANGE">REGISTRATION</font></center></h2>
-                
-        <form action="order.html" method="get" style="margin: 0 auto; width: 28%;">
+       
+            <div class="form1">
+                <form action="grid.html" method="get" style="margin: 0 auto; width: 28%;">
             <fieldset>
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter Name" required autofocus><br>
@@ -88,6 +114,6 @@ background-color: #935116;
              <center><input type="submit" value="Submit"></center>
             </fieldset>
         </form>
-    
+    </div>
 </body>
 </html>

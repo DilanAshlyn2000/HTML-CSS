@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myVideo { 
+ position: fixed; 
+ width: 100%;
+ height: auto;
+  right: 0;
+  bottom: 0;
+}
+.content {
+  position: fixed;
+  bottom: 50%;
+  top: 10%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 30%;
+  padding: 20px;
+}
+.content1 {
+  position: fixed;
+  bottom: 10%;
+  top: 50%;
+  right: 0%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 30%;
+  padding: 20px;
+}
+#myBtn {
+
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  
+  background: #ddd;
+  color: black;
+}
+.header{
+  position: fixed;
+        display:inline-block;
+        width: 100%;
+    }
+    .menu{
+   
+    display: inline-block;
+    padding: 0px 20px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 19px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #873600 ;
+}
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo"> 
+        <source src="209419_small.mp4" type="video/mp4">
+       </video>
+       <div class="header">
+        <nav>
+            <ul>
+                <li class="menu"><a href="home.html">HOME</a></li>
+                <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                 <li class="menu"><a href="menu.html">MENU</a></li>
+                 <li class="menu"><a href="receipe.html">RECIPES</a></li>
+                 <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                 <li class="menu"><a href="contact.html">CONTACT</a></li>
+                 <li class="menu"><a href="map">MAP</a></li>
+                 <li class="menu"><a href="registration.html">SIGN UP</a></li>
+ 
+            </ul>
+        </nav>
+        </div>
+       <div class="content">
+        
+        <h1>BREW MIST LATTE</h1>
+    <p>INGREDIENTS:</p>
+    <p>2 cups milk</p>
+      <p>1 ⅓ cups hot freshly brewed dark roast espresso coffee</p>
+      </div>
+<div class="content1">
+  <p>Directions:</p>
+  <p>STEP 1: Heat milk in a saucepan set over medium-low heat. 
+  <p>STEP 2: Whisk briskly with a wire whisk to create foam.</p>
+  <p>STEP 3: Brew espresso and pour into four cups. </p>
+  <p>STEP 4: Pour in milk, holding back the foam with a spoon. Spoon foam over the top.</p>
+          <!-- Use a button to pause/play the video with JavaScript -->
+          <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+      <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+
+
+
+
+
+
+
+  
+</body>
+</html>
