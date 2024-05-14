@@ -1,136 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style> 
-   .header{
-    display:inline-block;
-    width: 100%;
-}
-.menu{
-display: inline-block;
-padding: 0px 40px;
+  <style>
+     /* body{
+            background-image: url("56.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        } */
+    .header{
+        display:inline-block;
+        width: 100%;
+    }
+    .menu{
+    display: inline-block;
+    padding: 0px 20px;
 }
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
 }
 
 li {
-float: left;
+  float: left;
 }
 
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 12px 19px;
-text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 19px;
+  text-decoration: none;
 }
-
 
 li a:hover {
-background-color: #935116;
+  background-color: #873600 ;
 }
-        .images { 
-            display: flex; 
-            flex-wrap: wrap; 
-            margin: 0 80px; 
-            padding: 30px; 
-        } 
-  
-        .photo { 
-            max-width: 31.333%; 
-            padding: 0 40px; 
-            height: 240px; 
-        } 
-  
-        .photo img { 
-            width: 100%; 
-            height: 100%; 
-        } 
-        .images1 { 
-            display: flex; 
-            flex-wrap: wrap; 
-            margin: 0 100px; 
-            padding: 30px; 
-        } 
-  
-        .photo1 { 
-            max-width: 31.333%; 
-            padding: 0 40px; 
-            height: 240px; 
-        } 
-  
-        .photo img1 { 
-            width: 100%; 
-            height: 100%; 
-        } 
-        .bottom{
-            position: absolute;
-            right:50%;
-            bottom: 0px;
-            text-align: center;
-            top: 120%;
-          
-        } 
-    </style> 
-    <link rel="stylesheet" href="style.css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
+
+    .header1 {
+      text-align: center;
+      padding: 0px;
+      color:white;
+      font-family:'Times New Roman', Times, serif;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -24px auto; 
+      max-width: 299mm; 
+      padding: -9px 20px; 
+      box-sizing: border-box;
+    }
+
+    .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+      
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    
+    @media (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 100%;
+      }
+    }
+
+    
+    @media (max-width: 600px) {
+      .column {
+        flex: 50%;
+        max-width: 100%;
+      }
+    }
+
+  </style>
 </head>
 <body>
-    <h1><body backgroundcolor="white "><font color="#7B241C"><center><u>BREW-TIFUL MORNINGS</u></center></h1></body></font>
+
     <div class="header">
         <nav>
             <ul>
-    
+              <li class="menu"><a href="home.html">HOME</a></li>
                <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
-                <li class="menu"><a href="menu.html">MENU</a></li>
-                <li class="menu"><a href="registration.html">REGISTRATION FORM</a></li>
+                <li class="menu"><a href="menu1.html">MENU</a></li>
+                <li class="menu"><a href="receipe.html">RECIPES</a></li>
                 <li class="menu"><a href="gallery.html">GALLERY</a></li>
-                <li class="menu"><a href="contactus.html">CONTACT</a></li>
-                <li class="menu"><a href="https://maps.app.goo.gl/bnNm3PhDDAgMB3Xo9">MAP</a></li>
-               
+                <li class="menu"><a href="contact.html">CONTACT</a></li>
+                <li class="menu"><a href="map.html">MAP</a></li>
+                <li class="menu"><a href="registration.html">SIGN UP</a></li>
             </ul>
         </nav>
-    </div>
-    <div class="images"> 
-        <div class="photo"> 
-            <img src="1.png" alt="photo" /> 
-            <font color="brown"><pre>      SUNSET SERENADE LATTE</pre></font>
-        </div> 
+        </div>
+<div class="header1">
+  <h1>Brewing Joy in Every Cup</h1>
+ </div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+    <div class="column">
+        <img src="1.png" alt="img1">
+        <img src="7.jpg" >
+        <!-- <img src="3.jpg" >
+        <img src="37.jpg" > -->
+  </div>
   
-        <div class="photo"> 
-            <img src="7.jpg" alt="photo" /> 
-            <font color="brown"><pre>      WHISPERING WOODS BREW</pre></font>
-        </div> 
-          
-        <div class="photo"> 
-            <img src="3.jpg" alt="photo" /> 
-            <font color="brown"><pre>      COZY CABIN CAPPUCCINO</pre></font>
-        </div> 
-    </div> 
-    <div class="images1"> 
-        <div class="photo1"> 
-            <img src="27.jpg" alt="photo" /> 
-            <font color="brown"><pre>     DREAMY DUSK DECAF</pre></font>
-        </div> 
-  
-        <div class="photo1"> 
-            <img src="9.jpg" alt="photo" /> 
-            <font color="brown"><pre>      VELVET SKY VANILLA </pre></font>
-        </div> 
-          
-        <div class="photo1"> 
-            <img src="15.jpg" alt="photo" /> 
-            <font color="brown"><pre>      NUTELLA CAPPUCCINO</pre></font>
-        </div> 
-    </div> 
-    <div class="bottom">
-        <center><a href="index.html">EXIT</a></center>
-    </div>
+  <div class="column">
+    <img src="21.jpeg">
+    <img src="10.jpg" >
+    <!-- <img src="bold.jpg" >
+    <img src="26.webp" > -->
+  </div> 
+  <div class="column">
+  <img src="27.jpg" >
+  <img src="14.jpg" >
+  <!-- <img src="26.webp" >
+  <img src="50.avif" > -->
+  </div> 
+
+  <div class="column">
+    <img src="9.jpg" >
+    <img src="18.jpg" >
+  <!-- <img src="40.jpg" >
+    <img src="3.jpg" > -->
+  </div> 
+</div>
+
 </body>
 </html>
+

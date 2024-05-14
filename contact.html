@@ -7,12 +7,13 @@ body{
             background-image: url("52.webp");
             background-repeat: no-repeat;
             background-size: cover;
-        }
+            margin: 0px;
+        } 
 .flip-card {
     background-color: transparent;
-    width: 100%;
+    /* width: 100%;
     height: 100%;
-    perspective: 1000px;
+    perspective: 1000px; */
     margin: 146px 15px;
 }
 
@@ -39,7 +40,7 @@ body{
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  /* background-color: #bbb; */
   color: black;
 }
 
@@ -83,18 +84,45 @@ text-decoration: none;
 li a:hover {
 background-color: #935116;
 }
+.head{
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    color:white;
+/* bottom: 20px;
+ */
+bottom: 0;
+ position: absolute;
+}
+h2{
+    width: 100%;
+            animation-name: text;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+}
+#one {
+            animation-direction: alternate-reverse;
+        }
+ 
+        @keyframes text {
+            from {
+                margin-left: 60%;
+            }
+ 
+            to {
+                margin-left: 0%;
+            }
+        }
 </style>
 </head>
 <body>
-
+  
     <div class="header">
         <nav>
             <ul>
               <li class="menu"><a href="home.html">HOME</a></li>
                <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
-                <li class="menu"><a href="menu.html">MENU</a></li>
+                <li class="menu"><a href="menu1.html">MENU</a></li>
                 <li class="menu"><a href="receipe.html">RECIPES</a></li>
-                <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                <li class="menu"><a href="gallery.html">GALLERY</a></li>
                 <li class="menu"><a href="contact.html">CONTACT</a></li>
                 <li class="menu"><a href="map.html">MAP</a></li>
                 <li class="menu"><a href="registration.html">SIGN UP</a></li>
@@ -105,7 +133,7 @@ background-color: #935116;
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="h.jpg" alt="Avatar" style="width:500px;height:300px;">
+      <img src="65.avif" alt="Avatar" style="width:500px;height:300px;">
     </div>
     <div class="flip-card-back">
       <h1> HAVE QUESTIONS OR FEEDBACK?    </h1> 
@@ -115,6 +143,8 @@ background-color: #935116;
     </div>
   </div>
 </div>
-
+<div class="head">
+  <center><h2 id="one">GREAT IDEAS COME FROM GREAT COFFEE!</h2></center>
+</div>
 </body>
 </html>

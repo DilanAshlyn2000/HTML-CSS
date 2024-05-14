@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <style>
-       .header{
-        display:inline-block;
-        width: 100%;
-    }
+      .header {
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+}
     .menu{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 ul {
   list-style-type: none;
@@ -40,6 +41,10 @@ li a:hover {
   background-color: #873600 ;
 }
    
+.logo{
+  display: inline-block;
+    width: 13%;
+}
  #myVideo { 
  position: fixed; 
  width: 100%;
@@ -47,7 +52,10 @@ li a:hover {
   right: 0;
   bottom: 0;
 }
-
+nav {
+    display: inline-block;
+    width: 86%;
+}
 
 .content {
     
@@ -60,20 +68,23 @@ li a:hover {
   padding: 5px;
 }
 .fa-facebook {
-  background: #3B5998;
+  background: black;
   color: white;
   text-align: right;
  
   
 }
 .fa-instagram {
-  background: #125688;
+  background:black;
   color: white;
   text-align: right;
   
 }
-
-
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 </style>
 </head>
 <body>
@@ -83,34 +94,53 @@ li a:hover {
       </video>
    
       <div class="content">
-       
         <div class="header">
+          <div class="logo" style="display:inline-block;">
+            <img src="logo4.jpg" alt="logo" style="width:45%">
+            </div>
             <nav>
                 <ul>
                   <li class="menu"><a href="home.html">HOME</a></li>
                    <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
-                    <li class="menu"><a href="menu.html">MENU</a></li>
+                    <li class="menu"><a href="menu1.html">MENU</a></li>
                     <li class="menu"><a href="receipe.html">RECIPES</a></li>
-                    <li class="menu"><a href="gallery1.html">GALLERY</a></li>
+                    <li class="menu"><a href="gallery.html">GALLERY</a></li>
                     <li class="menu"><a href="contact.html">CONTACT</a></li>
+                    <li class="menu"><a href="testimonals.html">RATINGS</a></li>
                     <li class="menu"><a href="map.html">MAP</a></li>
                     <li class="menu"><a href="registration.html">SIGN UP</a></li>
     
                 </ul>
             </nav>
             </div>
+        <!-- <div class="header">
+          <div class="logo" style="display:inline-block;">
+            <img src="logo4.jpg" alt="logo" style="width:45%">
+            </div>
+            <nav>
+                <ul>
+                  <li class="menu"><a href="home.html">HOME</a></li>
+                   <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+                    <li class="menu"><a href="menu1.html">MENU</a></li>
+                    <li class="menu"><a href="receipe.html">RECIPES</a></li>
+                    <li class="menu"><a href="gallery.html">GALLERY</a></li>
+                    <li class="menu"><a href="contact.html">CONTACT</a></li>
+                    <li class="menu"><a href="map.html">MAP</a></li>
+                    <li class="menu"><a href="registration.html">SIGN UP</a></li>
+    
+                </ul>
+            </nav>
+            </div> -->
             <h1>BREW-TIFUL MORNINGS</h1>
             <p>CREATING AND TREATING COFFEE OBSESSIONS</p>
-        <div class="icon">
-          
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-          
-        </div>
-      </div>
-      <footer>
-        <center><p>&copy; 2024 BREW-TIFUL</p></center>  
-  </footer>
       
+      </div>
+      <footer style="color: white;">
+        <center><p>&copy; 2024 BREW-TIFUL</p></center>
+        <div class="icon"><center>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a></center>
+        </div>
+  </footer> 
 </body>
 </html>

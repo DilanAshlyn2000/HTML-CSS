@@ -1,0 +1,158 @@
+<!doctype html>
+<title>Example</title>
+<style>
+ 
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: stretch;
+  grid-template-columns: auto auto auto;
+  
+  padding: 100px;
+  }
+  .card {
+    
+    flex: 0 0 200px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+    
+  }
+  .card .text > button {
+    background:black;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+    .header{
+    display:inline-block;
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.menu{
+display: inline-block;
+padding: 0px 20px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black ;
+
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 12px 19px;
+text-decoration: none;
+}
+
+
+li a:hover {
+background-color: #935116;
+}
+</style>
+<body>
+
+
+<div class="header">
+  <nav>
+      <ul>
+        <li class="menu"><a href="home.html">HOME</a></li>
+         <li class="menu"><a href="aboutus.html">ABOUT US</a></li>
+          <li class="menu"><a href="menu1.html">MENU</a></li>
+          <li class="menu"><a href="receipe.html">RECIPES</a></li>
+          <li class="menu"><a href="gallery.html">GALLERY</a></li>
+          <li class="menu"><a href="contact.html">CONTACT</a></li>
+          <li class="menu"><a href="map.html">MAP</a></li>
+          <li class="menu"><a href="registration.html">SIGN UP</a></li>
+
+      </ul>
+  </nav>
+  </div>
+<main class="cards">
+  <article class="card">
+    <img src="25.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Morning Mist Espresso</h3>
+      <p>Rs.220</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="1.png" alt="Sample photo">
+    <div class="text">
+      <h3>Whispering Woods Brew</h3>
+      <p>Rs.195</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="21.jpeg" alt="Sample photo">
+    <div class="text">
+      <h3>Golden Glow Mocha</h3>
+      <p>Rs.275</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="14.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Sunset Serenade Latte</h3>
+      <p>Rs.180</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="27.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Dawn Hot Break Blend</h3>
+      <p>Rs.240</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="3.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Cozy Cabin Cappuccino</h3>
+      <p>Rs.280</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="18.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Sparkling Stream Brew</h3>
+      <p>Rs.340</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="26.webp" alt="Sample photo">
+    <div class="text">
+      <h3>Whispering Woods Brew</h3>
+      <p>Rs.280</p>
+      <button>ORDER NOW</button>
+    </div>
+  </article>
+</main>
+</body>
+</html>
